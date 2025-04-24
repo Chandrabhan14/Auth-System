@@ -17,3 +17,6 @@ A full-stack authentication system built using **React**, **Node.js**, **Express
 - 🧭 Navigation based on user role
 - 💾 Persistent login state using `localStorage`
 - ✨ Clean UI with basic CSS styling
+
+
+
