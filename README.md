@@ -20,6 +20,18 @@ A full-stack authentication system built using **React**, **Node.js**, **Express
 - 🚀 - JWT auth used 
 
 
+## 🔒 User Flow - 
+Register as Admin or Customer.
+
+Verify email using the code received (mocked or via backend console/email service).
+
+Login using your credentials.
+
+View welcome dashboard (Admin or Customer).
+
+Routes are protected — you must be authenticated to view them.
+
+
 ## 🚀 Steps for starting frontend - 
 📁 1. Clone and Navigate from project 
       ```bash
@@ -43,17 +55,20 @@ npm install
   3. Run frontend  - 
 npm run dev 
 
+## 🚀 For Local DB setup queries - 
+//use this 
+CREATE DATABASE auth_db;
+USE auth_db;
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  firstName VARCHAR(255),
+  lastName VARCHAR(255),
+  email VARCHAR(255) UNIQUE,
+  password VARCHAR(255),
+  role ENUM('customer', 'admin'),
+  isVerified BOOLEAN DEFAULT FALSE,
+  verificationCode VARCHAR(255)
+);
 
-
-🔒 User Flow
-Register as Admin or Customer.
-
-Verify email using the code received (mocked or via backend console/email service).
-
-Login using your credentials.
-
-View welcome dashboard (Admin or Customer).
-
-Routes are protected — you must be authenticated to view them.
 
 
