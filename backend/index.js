@@ -14,10 +14,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: "66.179.254.59",
-  user: "ezpz",
-  password: "esh@len$1",
-  database: "admin_ezpz",
+  host: "66.xx9.254.xx",
+  user: "root",
+  password: "root@root",
+  database: "rootdb",
   port:3306
 });
 
